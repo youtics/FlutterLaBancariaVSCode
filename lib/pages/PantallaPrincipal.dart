@@ -31,7 +31,9 @@ class PantallaPrincipal extends StatelessWidget {
               style: TextStyle(fontSize: 25),
             ),
             padding: EdgeInsets.symmetric(vertical: 20, horizontal: 60),
-            color: Color.fromARGB(255, 21, 204, 30),
+            color: Color.fromARGB(255, 59, 156, 64),
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
           )),
     );
   }

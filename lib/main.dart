@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/pages/PantallaPrincipal.dart';
+import 'package:flutter_application_1/pages/Inicio.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      home: PantallaPrincipal(),
+      home: Inicio(),
     );
   }
 }

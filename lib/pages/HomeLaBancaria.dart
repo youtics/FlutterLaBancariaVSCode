@@ -13,7 +13,7 @@ class MyHomePageState extends StatelessWidget {
         actions: <Widget>[IconButton(onPressed: _Add, icon: Icon(Icons.home))],
       ),
       body: const WebView(
-        initialUrl: "https://labancaria.obliviondev.com.ar/",
+        initialUrl: "https://labancaria.obliviondev.com.ar/?cat=20",
         javascriptMode: JavascriptMode.unrestricted,
       ),
     );
