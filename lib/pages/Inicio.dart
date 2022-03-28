@@ -11,12 +11,44 @@ class Inicio extends StatelessWidget {
     return MaterialApp(
       title: 'Material App',
       home: Scaffold(
+          drawer: Drawer(
+            // Add a ListView to the drawer. This ensures the user can scroll
+            // through the options in the drawer if there isn't enough vertical
+            // space to fit everything.
+            child: ListView(
+              // Important: Remove any padding from the ListView.
+              padding: EdgeInsets.zero,
+              children: [
+                const DrawerHeader(
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+                  ),
+                  child: Text('Drawer Header'),
+                ),
+                ListTile(
+                  title: const Text('Item 1'),
+                  onTap: () {
+                    // Update the state of the app.
+                    // ...
+                  },
+                ),
+                ListTile(
+                  title: const Text('Item 2'),
+                  onTap: () {
+                    // Update the state of the app.
+                    // ...
+                  },
+                ),
+              ],
+            ),
+          ),
           appBar: AppBar(
             title: Image.asset('images/appBar.png', fit: BoxFit.cover),
-            backgroundColor: Colors.white,
+            backgroundColor: Color.fromARGB(255, 141, 219, 200),
             toolbarHeight: 100,
           ),
-          body: GridView.count(
+          body: Center(
+              child: GridView.count(
             crossAxisCount: 2,
             children: <Widget>[
               Card(
@@ -116,7 +148,7 @@ class Inicio extends StatelessWidget {
                 ), //Center
               ), //Card
             ], //Widget
-          )),
+          ))),
     );
   }
 
